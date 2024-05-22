@@ -1,6 +1,6 @@
 package com.bichinhos.interfacesclasses.entidades;
 
-import com.bichinhos.interfacesclasses.servicos.livro.ICalculavel;
+import com.bichinhos.interfacesclasses.servicos.calculavel.ICalculavel;
 import lombok.Getter;
 import lombok.Setter;
 
