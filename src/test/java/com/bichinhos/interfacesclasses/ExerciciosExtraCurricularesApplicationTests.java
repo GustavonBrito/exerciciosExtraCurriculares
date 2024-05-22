@@ -1,4 +1,4 @@
-package com.bichinhos.exerciciosextracurriculares;
+package com.bichinhos.interfacesclasses;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

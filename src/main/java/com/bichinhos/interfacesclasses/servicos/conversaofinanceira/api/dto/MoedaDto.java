@@ -1,4 +1,4 @@
-package com.bichinhos.exerciciosextracurriculares.currencyconversion.api.dto;
+package com.bichinhos.interfacesclasses.servicos.conversaofinanceira.api.dto;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

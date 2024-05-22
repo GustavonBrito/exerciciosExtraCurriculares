@@ -1,6 +1,6 @@
-package com.bichinhos.exerciciosextracurriculares.currencyconversion.api.service.impl;
+package com.bichinhos.interfacesclasses.servicos.conversaofinanceira.api.impl;
 
-import com.bichinhos.exerciciosextracurriculares.currencyconversion.api.service.IConversaoFinanceira;
+import com.bichinhos.interfacesclasses.servicos.conversaofinanceira.api.IConversaoFinanceira;
 
 public class ConversaoFinanceira implements IConversaoFinanceira {
 

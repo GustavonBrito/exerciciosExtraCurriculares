@@ -1,6 +1,6 @@
-package com.bichinhos.exerciciosextracurriculares.currencyconversion.api.service;
+package com.bichinhos.interfacesclasses.servicos.conversaofinanceira.api;
 
-import com.bichinhos.exerciciosextracurriculares.currencyconversion.api.dto.MoedaDto;
+import com.bichinhos.interfacesclasses.servicos.conversaofinanceira.api.dto.MoedaDto;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
