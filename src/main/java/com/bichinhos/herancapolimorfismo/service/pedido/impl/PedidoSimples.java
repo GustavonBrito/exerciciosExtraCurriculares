@@ -1,18 +1,20 @@
 package com.bichinhos.herancapolimorfismo.service.pedido.impl;
 
+import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 public class PedidoSimples extends Pedido{
 
-    private String modo;
+    private double freteFixo;
 
     @Override
-    public UUID obterId() {
-        return super.obterId();
+    public Double calcularValorTotal() {
+        return null;
     }
 
-    public PedidoSimples(String modo, UUID id) {
-        super(id);
-        this.modo = modo;
+    public PedidoSimples(double freteFixo, UUID id, String cliente, Date dataPedido, List<String> item) {
+        super(id,cliente,dataPedido,item);
+        this.freteFixo = freteFixo;
     }
 }
