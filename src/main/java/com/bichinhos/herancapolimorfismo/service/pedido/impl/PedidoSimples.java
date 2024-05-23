@@ -8,13 +8,14 @@ public class PedidoSimples extends Pedido{
 
     private double freteFixo;
 
+    public PedidoSimples(UUID id, String cliente, Date dataPedido, List<String> itens, double freteFixo) {
+        super(id, cliente, dataPedido, itens);
+        this.freteFixo = freteFixo;
+    }
+
     @Override
     public Double calcularValorTotal() {
         return null;
     }
 
-    public PedidoSimples(double freteFixo, UUID id, String cliente, Date dataPedido, List<String> item) {
-        super(id,cliente,dataPedido,item);
-        this.freteFixo = freteFixo;
-    }
 }

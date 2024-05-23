@@ -1,24 +1,28 @@
 package com.bichinhos.herancapolimorfismo.service.pedido.impl;
 
 import com.bichinhos.herancapolimorfismo.service.pedido.IPedido;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
 public class Pedido implements IPedido {
-
+    @Id
+    @GeneratedValue
     private UUID id;
     private String cliente;
     private Date dataPedido;
-    private List<String> item;
+    private List<String> itens;
     private Double desconto;
 
-    public Pedido(UUID id, String cliente, Date dataPedido, List<String> item) {
+    public Pedido(UUID id, String cliente, Date dataPedido, List<String> itens) {
         this.id = id;
         this.cliente = cliente;
         this.dataPedido = dataPedido;
-        this.item = item;
+        this.itens = itens;
+        this.desconto = 0.0;
     }
 
     @Override
