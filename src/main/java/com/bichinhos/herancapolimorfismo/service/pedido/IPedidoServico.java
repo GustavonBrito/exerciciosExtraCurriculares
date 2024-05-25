@@ -3,9 +3,8 @@ package com.bichinhos.herancapolimorfismo.service.pedido;
 
 import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 
-public interface IPedido {
+public interface IPedidoServico {
 
     int obterId ();
     String obterCliente ();

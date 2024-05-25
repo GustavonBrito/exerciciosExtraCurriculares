@@ -1,7 +1,7 @@
 package com.bichinhos.herancapolimorfismo.service.pedido.impl;
 
 import com.bichinhos.herancapolimorfismo.entity.Cliente;
-import com.bichinhos.herancapolimorfismo.service.pedido.IPedido;
+import com.bichinhos.herancapolimorfismo.service.pedido.IPedidoServico;
 import com.bichinhos.herancapolimorfismo.entity.ItemPedido;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -11,13 +11,12 @@ import lombok.*;
 import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 
 
 @Getter
 @Setter
 @ToString
-public class Pedido implements IPedido  {
+public class PedidoServico implements IPedidoServico {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idPedido;
@@ -26,7 +25,7 @@ public class Pedido implements IPedido  {
     private LocalDate dataPedido;
    private Double desconto;
 
-    public Pedido(Cliente cliente, ItemPedido itemPedido, LocalDate dataPedido, Double desconto) {
+    public PedidoServico(Cliente cliente, ItemPedido itemPedido, LocalDate dataPedido, Double desconto) {
         this.cliente = cliente;
         this.itemPedido = itemPedido;
         this.dataPedido = dataPedido;
@@ -40,7 +39,7 @@ public class Pedido implements IPedido  {
 
     @Override
     public String obterCliente() {
-        System.out.println(this.cliente);;
+        System.out.println(this.cliente);
         return null;
     }
 

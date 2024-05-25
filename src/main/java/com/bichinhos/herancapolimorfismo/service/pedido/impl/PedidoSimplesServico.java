@@ -2,25 +2,21 @@ package com.bichinhos.herancapolimorfismo.service.pedido.impl;
 
 import com.bichinhos.herancapolimorfismo.entity.Cliente;
 import com.bichinhos.herancapolimorfismo.entity.ItemPedido;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import lombok.*;
 
 import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 
 @Getter
 @Setter
 @ToString
-public class PedidoSimples extends Pedido{
+public class PedidoSimplesServico extends PedidoServico {
 
     private int idPedidoSimples;
     private double freteFixo;
 
-    public PedidoSimples(Cliente cliente, ItemPedido itemPedido, LocalDate dataPedido, Double desconto, int idPedidoSimples, double freteFixo) {
+    public PedidoSimplesServico(Cliente cliente, ItemPedido itemPedido, LocalDate dataPedido, Double desconto, int idPedidoSimples, double freteFixo) {
         super(cliente, itemPedido, dataPedido, desconto);
         this.idPedidoSimples = idPedidoSimples;
         this.freteFixo = freteFixo;
