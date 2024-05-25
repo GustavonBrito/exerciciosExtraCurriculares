@@ -1,37 +1,46 @@
 package com.bichinhos.herancapolimorfismo.service.pedido.impl;
 
+import com.bichinhos.herancapolimorfismo.entity.Cliente;
 import com.bichinhos.herancapolimorfismo.service.pedido.IPedido;
+import com.bichinhos.herancapolimorfismo.entity.ItemPedido;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.*;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
-public class Pedido implements IPedido {
-    @Id
-    @GeneratedValue
-    private UUID id;
-    private String cliente;
-    private Date dataPedido;
-    private List<String> itens;
-    private Double desconto;
 
-    public Pedido(UUID id, String cliente, Date dataPedido, List<String> itens) {
-        this.id = id;
+@Getter
+@Setter
+@ToString
+public class Pedido implements IPedido  {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int idPedido;
+    private Cliente cliente;
+    private ItemPedido itemPedido;
+    private LocalDate dataPedido;
+   private Double desconto;
+
+    public Pedido(Cliente cliente, ItemPedido itemPedido, LocalDate dataPedido, Double desconto) {
         this.cliente = cliente;
+        this.itemPedido = itemPedido;
         this.dataPedido = dataPedido;
-        this.itens = itens;
-        this.desconto = 0.0;
+        this.desconto = desconto;
     }
 
     @Override
-    public UUID obterId() {
-        return null;
+    public int obterId() {
+        return this.idPedido;
     }
 
     @Override
     public String obterCliente() {
+        System.out.println(this.cliente);;
         return null;
     }
 
@@ -42,6 +51,11 @@ public class Pedido implements IPedido {
 
     @Override
     public List<String> obterItens() {
+        List<String>itens = null;
+        itens.add(this.itemPedido.getProduto());
+        for (int i = 0; i < itens.size(); i++){
+            System.out.println(itens.get(i));
+        }
         return null;
     }
 
@@ -54,4 +68,5 @@ public class Pedido implements IPedido {
     public Date aplicarDesconto(double desconto) {
         return null;
     }
+
 }

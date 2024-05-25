@@ -7,7 +7,7 @@ import java.util.UUID;
 
 public interface IPedido {
 
-    UUID obterId ();
+    int obterId ();
     String obterCliente ();
     Date obterDataPedido ();
     List<String> obterItens();
