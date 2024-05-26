@@ -1,15 +1,12 @@
-# Praticas de uso de Interface e Classes em Java ☕
+# Praticas de uso de ArrayList<> em Java ☕
 
 ## Descrição
-    Na Camada de serviço localizei todas as interfaces e metodos que implementam
-    essas interfaces.
-
-    Na camanda de entidades deixei todas os produtos fisicos, seus atributos, getters e setters
-    e seu construtor
+    Nesta mini aplicação temos uma classe Pessoa e na classe principal temos uma instancia dessa classe e o armazenamento
+    dessas informações são feitas em um ArrayList pelo método add.
 
     - [x] Java ⚒️
-    - [x] java.net ⚒️
     - [x] lombok ⚒️
+    - [x] SpringBoot ⚒️
 
 ## Instrução de instalação
 
