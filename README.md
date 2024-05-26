@@ -1,4 +1,4 @@
-# Array sort com bubble sort
+# Array sort com bubble sort ☕
 
 Essa aplicação realiza a ordenação de uma lista inserida pelo usuario através da tecnica bubble sort, basicamente ela
 compara dois valores da lista e caso um for maior ou menor que o outro eles trocam de posição, tudo depende se o usuário
