@@ -1,18 +1,21 @@
-# Praticas de uso de Interface e Classes em Java ☕
 
-## Descrição
-    Na Camada de serviço localizei todas as interfaces e metodos que implementam
-    essas interfaces.
+![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+# Este repositório contem o uso de alguns dos metodos mais utilizados em java ☕
 
-    Na camanda de entidades deixei todas os produtos fisicos, seus atributos, getters e setters
-    e seu construtor
+1. Branch, lista1JavaBichinhos:
 
-    - [x] Java ⚒️
-    - [x] java.net ⚒️
-    - [x] lombok ⚒️
+    • Praticas de uso de Interface e Classes em Java ☕
 
-## Instrução de instalação
+2. Branch, lista2JavaBichinhos:
 
-```bash
-git clone https://github.com/GustavonBrito/exerciciosExtraCurriculares.git
-```
+    • Praticas de uso de Herança e Poliformismo
+
+3. Branch, lista3JavaBichinhos:
+
+    • Praticas de uso de algoritmos fazendo um sort de array
+
+4. Branch, lista4JavaBichinhosArrayList:
+
+    • Praticas de uso de ArrayList<>
+
