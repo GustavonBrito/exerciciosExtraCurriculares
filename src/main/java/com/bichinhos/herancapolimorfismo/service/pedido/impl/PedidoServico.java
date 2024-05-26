@@ -9,7 +9,7 @@ import jakarta.persistence.Id;
 import lombok.*;
 
 import java.time.LocalDate;
-import java.util.Date;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -44,16 +44,16 @@ public class PedidoServico implements IPedidoServico {
     }
 
     @Override
-    public Date obterDataPedido() {
-        return null;
+    public LocalDate obterDataPedido() {
+        return this.dataPedido;
     }
 
     @Override
     public List<String> obterItens() {
-        List<String>itens = null;
+        List<String>itens = new ArrayList<>();
         itens.add(this.itemPedido.getProduto());
-        for (int i = 0; i < itens.size(); i++){
-            System.out.println(itens.get(i));
+        for (String item: itens){
+            System.out.println(item);
         }
         return null;
     }
@@ -64,7 +64,7 @@ public class PedidoServico implements IPedidoServico {
     }
 
     @Override
-    public Date aplicarDesconto(double desconto) {
+    public LocalDate aplicarDesconto(double desconto) {
         return null;
     }
 

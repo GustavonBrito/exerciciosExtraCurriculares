@@ -5,7 +5,6 @@ import com.bichinhos.herancapolimorfismo.entity.ItemPedido;
 import lombok.*;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 
 @Getter
@@ -24,6 +23,7 @@ public class PedidoSimplesServico extends PedidoServico {
 
     @Override
     public int obterId() {
+        System.out.println("O id do pedido simples: ");
         return this.idPedidoSimples;
     }
 
@@ -33,8 +33,9 @@ public class PedidoSimplesServico extends PedidoServico {
     }
 
     @Override
-    public Date obterDataPedido() {
-        return super.obterDataPedido();
+    public LocalDate obterDataPedido() {
+        System.out.println("A data do pedido do cliente " + super.getCliente().getNome() + " foi em " +super.getDataPedido());
+        return super.getDataPedido();
     }
 
     @Override
@@ -48,7 +49,7 @@ public class PedidoSimplesServico extends PedidoServico {
     }
 
     @Override
-    public Date aplicarDesconto(double desconto) {
+    public LocalDate aplicarDesconto(double desconto) {
         return super.aplicarDesconto(desconto);
     }
 

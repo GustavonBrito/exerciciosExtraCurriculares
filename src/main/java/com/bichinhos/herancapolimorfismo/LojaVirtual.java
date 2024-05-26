@@ -16,12 +16,11 @@ public class LojaVirtual {
         ItemPedido itemPedidoS23Eduardo = new ItemPedido(1, "S23", 1, 2000.00);
         ItemPedido itemPedidoS24Eduardo = new ItemPedido(2, "S24", 1, 2000.00);
         PedidoServico pedidoServicoSimples23Eduardo = new PedidoSimplesServico(clienteEduardo, itemPedidoS23Eduardo, LocalDate.now(), 0.0, 1, 120.50);
-        PedidoServico pedidoServicoSimplespedidos24Eduardo = new PedidoSimplesServico(clienteEduardo, itemPedidoS24Eduardo, LocalDate.now(), 0.0, 1, 120.50);
+        PedidoServico pedidoServicoSimples24Eduardo = new PedidoSimplesServico(clienteEduardo, itemPedidoS24Eduardo, LocalDate.now(), 0.0, 1, 120.50);
 
-        System.out.println(pedidoServicoSimples23Eduardo);
+        pedidoServicoSimples23Eduardo.obterId();
         pedidoServicoSimples23Eduardo.obterCliente();
         pedidoServicoSimples23Eduardo.obterItens();
-        System.out.println(pedidoServicoSimplespedidos24Eduardo);
+        pedidoServicoSimples23Eduardo.obterDataPedido();
     }
-
 }
